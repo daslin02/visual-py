@@ -7,7 +7,9 @@
 class mainWindow 
 {
 public:
-    explicit mainWindow(QMainWindow* parent = nullptr);
+
     Ui::MW_MainWindow* window;
+
+    explicit mainWindow(QMainWindow* parent = nullptr);
     void init();
 };
