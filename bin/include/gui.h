@@ -18,8 +18,10 @@ public:
 class mainWindow 
 {
 public:
+
     Graph* graphic;
     explicit mainWindow( QMainWindow* parent = nullptr );
     Ui::MW_MainWindow* window = new Ui::MW_MainWindow();
     void init(QGraphicsView* view , QGraphicsScene* scene);
+
 };

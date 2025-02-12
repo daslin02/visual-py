@@ -23,6 +23,7 @@ void Graph::add()
 
 mainWindow::mainWindow( QMainWindow* parent)
 {
+    window = new Ui::MW_MainWindow;
     window->setupUi(parent);
     init(window->GV_view, window->GS_scene);
 }

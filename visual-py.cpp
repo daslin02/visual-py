@@ -1,3 +1,4 @@
+
 #include <gui.h>
 #include <QApplication>
 #include <QMainWindow>
@@ -22,5 +23,6 @@ int main (int arg , char *argv[])
         line->setLine(pos);
     } 
     window.show(); 
+
     return app.exec();
 }
