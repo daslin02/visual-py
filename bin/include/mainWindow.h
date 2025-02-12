@@ -16,6 +16,8 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include <qgraphicsscene.h>
+#include <qlogging.h>
 
 QT_BEGIN_NAMESPACE
 
@@ -29,6 +31,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QWidget *W_leftPanel;
     QGraphicsView *GV_view;
+    QGraphicsScene* GS_scene;
 
     void setupUi(QMainWindow *MW_MainWindow)
     {
@@ -60,7 +63,8 @@ public:
 
         horizontalLayout->addWidget(W_leftPanel);
 
-        GV_view = new QGraphicsView(W_mainWidget);
+        GS_scene = new QGraphicsScene;
+        GV_view = new QGraphicsView(GS_scene);
         GV_view->setObjectName(QString::fromUtf8("GV_view"));
 
         horizontalLayout->addWidget(GV_view);
