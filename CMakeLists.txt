@@ -13,4 +13,3 @@ target_include_directories(visual-py PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/bin/incl
 target_link_libraries(visual-py PRIVATE gui)
 
 target_link_libraries(visual-py PRIVATE Qt6::Core Qt6::Widgets)
-
