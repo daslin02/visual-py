@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <QApplication>
 //#include <gui.h>
 int main (int arg , char *argv[])
 {
